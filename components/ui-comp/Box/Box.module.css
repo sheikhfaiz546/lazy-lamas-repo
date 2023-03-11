@@ -1,0 +1,45 @@
+.mainContainer {
+  width: fit-content;
+  border: 2px solid var(--primary-400);
+  outline: 2px solid var(--primary-400);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 8px #44627c20;
+}
+
+/* Header for Box Title */
+.mainContainer .header {
+  background: linear-gradient(var(--primary-700) 10%, #63031b);
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  font-size: 20px;
+  border-bottom: 2px solid var(--primary-400);
+}
+
+/* Center Glow Styling */
+.mainContainer .header::before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.5em;
+  height: 100%;
+  background-color: #b60036;
+  filter: blur(13px);
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.mainContainer .header h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.3em 1em;
+  text-shadow: -4px 4px 0px #000000d6;
+}
+
+.mainContainer .body {
+  background-color: var(--dark-color);
+  padding: 3px 4.6px;
+}

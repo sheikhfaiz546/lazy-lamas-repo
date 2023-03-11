@@ -1,0 +1,92 @@
+.btnContainer {
+  max-width: 315px;
+}
+.btnContainer > button {
+  outline: 1px solid var(--primary-400);
+  width: 100%;
+  padding-inline: 1.51em;
+  font-size: 1.5rem;
+  background-color: var(--dark-color);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.btnContainer > button:hover {
+  outline: 3px solid var(--primary-400);
+}
+
+.btnContainer .textContainer {
+  width: 100%;
+  position: relative;
+  padding-block: 0.44em;
+  padding-inline: 0.83em 0.2em;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to bottom, var(--dark-color) 40%, #003452);
+  text-shadow: -3px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Left and Right Gradient Arrow Styling */
+.btnContainer .textContainer .triangleRight,
+.btnContainer .textContainer .triangleLeft {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.btnContainer .textContainer .triangleRight::before,
+.btnContainer .textContainer .triangleLeft::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1em;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--dark-color) 40%, #003452);
+}
+
+.btnContainer .textContainer .triangleRight {
+  filter: drop-shadow(-1px 0px 0px var(--primary-400));
+  right: calc(100% - 1px);
+}
+.btnContainer .textContainer .triangleRight::before {
+  right: 100%;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+.btnContainer .textContainer .triangleLeft {
+  filter: drop-shadow(2px 0px 0px var(--primary-400));
+  left: calc(100% - 1px);
+}
+.btnContainer .textContainer .triangleLeft::before {
+  left: 100%;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* Icon Related Styling */
+.btnContainer .textContainer .iconContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc(100% + 5px);
+}
+.btnContainer .textContainer .iconContainer .diamond {
+  width: 1.75em;
+  aspect-ratio: 1/1;
+  transform: rotate(135deg);
+  background: linear-gradient(45deg, var(--dark-color) 40%, #003452);
+  box-shadow: 0px 0px 0px 1px var(--primary-400),
+    0px 0px 0px 5px var(--dark-color), 0px 0px 0px 6px var(--primary-400);
+    transition: 0.2s ease-out;
+}
+.btnContainer > button:hover .iconContainer .diamond {
+  box-shadow: 0px 0px 0px 1px var(--primary-400),
+    0px 0px 0px 6px var(--dark-color), 0px 0px 0px 8px var(--primary-400);
+}
+
+.btnContainer .textContainer .iconContainer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 0.4));
+}

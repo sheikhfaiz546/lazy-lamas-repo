@@ -1,0 +1,19 @@
+.lineContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  justify-content: center;
+  position: relative;
+}
+.lineContainer span {
+  position: absolute;
+  width: calc(50% - 34px);
+  height: 2px;
+  background-color: white;
+}
+.lineContainer .leftLine {
+  left: 0;
+}
+.lineContainer .rightLine {
+  right: 0;
+}

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+:root {
+  --primary-400: #44627c;
+  --primary-700: #010118;
+  --grey-500: #bdbdbf;
+  --dark-color: #00020b;
+  --roboto-tight: "Roboto Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  font-family:var(--roboto-tight);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+button,
+input {
+  all: unset;
+  box-sizing: border-box;
+  width: auto;
+}
+button {
+  cursor: pointer;
+}

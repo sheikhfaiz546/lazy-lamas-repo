@@ -1,0 +1,70 @@
+.mainContainer {
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+}
+
+/* =========== Background Image Styling =========== */
+.backgroundImgWrapper {
+  height: 100%;
+  width: 100%;
+}
+.backgroundImgWrapper img {
+  object-fit: cover;
+  z-index: -1;
+}
+/* =========== Connect Wallet Button Styling =========== */
+
+.connectWalletBtnWrapper {
+  position: absolute;
+  z-index: 1;
+  right: 3rem;
+  top: 1.75rem;
+}
+
+/* =========== Form Styling =========== */
+
+.formWrapper {
+  position: relative;
+  min-height: inherit;
+  display: flex;
+}
+.form {
+  max-width: fit-content;
+  margin: auto;
+}
+.form > * {
+  display: flex;
+  margin-inline: auto;
+  flex-direction: column;
+}
+.form .formHeader {
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  position: relative;
+}
+.form .formHeader h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.535rem;
+  font-weight: 400;
+}
+.form .formHeader .separatorLine {
+  width: 90%;
+}
+
+.form .formBody {
+  margin-top: 2.2rem;
+  row-gap: 2.3rem;
+  align-items: center;
+}
+
+/* =====  Lamas logo Styling  ===== */
+.logoWrapper {
+  position: absolute;
+  z-index: 1;
+  bottom: 1rem;
+  right: 3rem;
+}
