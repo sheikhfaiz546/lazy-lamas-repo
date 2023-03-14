@@ -58,8 +58,6 @@
 .form .formBody {
   margin-top: 2.2rem;
   row-gap: 2.3rem;
-  /* user-select: none; */
-  display: grid;
   align-items: center;
 }
 

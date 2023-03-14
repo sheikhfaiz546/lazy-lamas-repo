@@ -1,0 +1,42 @@
+
+
+
+.mainContainer {
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+}
+
+/* =========== Background Image Styling =========== */
+.backgroundImgWrapper {
+  height: 100%;
+  width: 100%;
+}
+.backgroundImgWrapper img {
+  object-fit: cover;
+  z-index: -1;
+}
+/* =========== Connect Wallet Button Styling =========== */
+
+.connectWalletBtnWrapper {
+  position: absolute;
+  z-index: 1;
+  right: 3rem;
+  top: 1.75rem;
+}
+
+/* =========== Main Body Container  =========== */
+
+.bodyContent {
+  min-height: inherit;
+  display: flex;
+}
+.contentWrapper {
+  flex: 1;
+  margin: auto;
+  display: flex;
+  gap: 82px;
+  max-width: 737px;
+  user-select: none;
+}

@@ -1,3 +1,6 @@
+
+
+
 .input {
   width: 100%;
   outline: 0px solid white;
@@ -18,4 +21,3 @@
 .input::placeholder {
   color: var(--dark-color);
 }
-

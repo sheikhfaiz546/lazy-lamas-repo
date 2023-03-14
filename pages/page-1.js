@@ -12,7 +12,7 @@ import {
   WineGlassIcon,
 } from "@/components/ui-comp/SVG-Icons";
 
-export default function Home() {
+export default function Page1() {
   return (
     <div className={`${styles.mainContainer}`}>
       <div className={`${styles.backgroundImgWrapper}`}>

@@ -1,3 +1,6 @@
+
+
+
 .btnContainer {
   max-width: 315px;
 }
@@ -76,7 +79,7 @@
   background: linear-gradient(45deg, var(--dark-color) 40%, #003452);
   box-shadow: 0px 0px 0px 1px var(--primary-400),
     0px 0px 0px 5px var(--dark-color), 0px 0px 0px 6px var(--primary-400);
-    transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 .btnContainer > button:hover .iconContainer .diamond {
   box-shadow: 0px 0px 0px 1px var(--primary-400),

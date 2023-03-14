@@ -6,7 +6,7 @@ import Box from "@/components/ui-comp/Box";
 import InputTextFeild from "@/components/ui-comp/InputTextFeild";
 import { useRef, useState } from "react";
 
-export default function Home() {
+export default function Page2() {
   let inputFileRef = useRef(null);
   let [fileName, setFileName] = useState("");
 
