@@ -12,6 +12,8 @@
 .backgroundImgWrapper {
   height: 100%;
   width: 100%;
+  user-select: none;
+
 }
 .backgroundImgWrapper img {
   object-fit: cover;

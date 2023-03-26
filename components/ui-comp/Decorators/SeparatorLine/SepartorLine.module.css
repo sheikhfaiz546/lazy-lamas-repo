@@ -1,22 +1,51 @@
-
-
-
 .lineContainer {
   display: flex;
   align-items: center;
-  column-gap: 7px;
   justify-content: center;
   position: relative;
 }
 .lineContainer span {
   position: absolute;
-  width: calc(50% - 34px);
   height: 2px;
-  background-color: white;
+}
+
+.lineContainer .medium {
+  width: calc(50% - 32px);
+}
+.lineContainer .small {
+  width: calc(50% - 20px);
 }
 .lineContainer .leftLine {
   left: 0;
+  background-color: white;
 }
 .lineContainer .rightLine {
   right: 0;
+  background-color: white;
+}
+
+.greyLineContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+}
+.greyLineContainer > * {
+  flex-shrink: 0;
+}
+.greyLineContainer .greyleftLine,
+.greyLineContainer .greyRightLine {
+  position: absolute;
+  height: 3px;
+  /* background-color: #504f52; */
+  width: 100%;
+  width: calc(50% - 8px);
+}
+.greyLineContainer .greyleftLine {
+  left: 0;
+  background: linear-gradient(to left, #504F52 40%, rgba(80, 79, 82, 0) 100%);
+}
+.greyLineContainer .greyRightLine {
+  right: 0;
+  background: linear-gradient(to right, #504F52 40%, rgba(80, 79, 82, 0) 100%);
 }

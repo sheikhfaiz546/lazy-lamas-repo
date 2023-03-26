@@ -1,0 +1,148 @@
+.uncompletedRoute {
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-dasharray: 20 12;
+}
+.completedRoute {
+  stroke: var(--gold-400);
+  stroke-width: 4;
+  stroke-dashoffset: 0;
+}
+.animateRoute {
+  stroke: var(--gold-400);
+  stroke-width: 4;
+  animation: animateRoute 1.5s ease-out forwards 1s;
+}
+.checkpointDefault {
+  filter: url(#AI_Shadow_None);
+}
+.checkpointDefault .firstBox {
+  filter: url(#AI_Shadow_None);
+  fill: #11102a;
+  stroke: #45637d;
+  stroke-width: 1.6;
+}
+.checkpointDefault .gradientBox {
+  fill: url(#SVGID_1_);
+  stroke: #45637d;
+  stroke-width: 1.6;
+}
+.checkpointDefault .star {
+  filter: url(#AI_Shadow_None);
+  fill: #697c8d;
+  stroke: #5493b4;
+  stroke-width: 0.8;
+}
+
+/* Checkpoint Achieved */
+
+.checkpointAcheived {
+  filter: url(#AI_Shadow_2);
+}
+.checkpointAcheived .firstBox {
+  filter: url(#AI_Shadow_2);
+  fill: #11102a;
+  stroke: var(--gold-400);
+  stroke-width: 1.6;
+}
+.checkpointAcheived .gradientBox {
+  fill: url(#SVGID_1_);
+  stroke: var(--gold-400);
+  stroke-width: 1.6;
+}
+.checkpointAcheived .star {
+  filter: url(#AI_Shadow_2);
+  fill: var(--gold-400);
+  stroke: var(--gold-400);
+  stroke-width: 0.8;
+}
+
+/* Animation */
+.checkpointAnimateGroup {
+  filter: url(#AI_Shadow_None);
+  animation: animateCheckpoint 0.8s ease-out forwards 2.4s;
+}
+.checkpointAnimateGroup .firstBox {
+  filter: url(#AI_Shadow_None);
+  fill: #11102a;
+  stroke: #45637d;
+  stroke-width: 1.6;
+  animation: animateCheckpointfirstBox 0.8s ease-out forwards 2.4s;
+}
+.checkpointAnimateGroup .gradientBox {
+  fill: url(#SVGID_1_);
+  stroke: #45637d;
+  stroke-width: 1.6;
+  animation: animateCheckpointgradientBox 0.8s ease-out forwards 2.4s;
+}
+.checkpointAnimateGroup .star {
+  filter: url(#AI_Shadow_None);
+  fill: #697c8d;
+  stroke: #5493b4;
+  stroke-width: 0.8;
+  animation: animateCheckpointstar 0.8s ease-out forwards 2.4s;
+}
+
+.circleDefault{
+  stroke: #fff;
+}
+.circleAcheived{
+  stroke: var(--gold-400);
+
+}
+.circleAnimate{
+  stroke: #fff;
+  animation: animateCheckpointgradientBox 0.8s ease-out forwards 2.4s;
+  
+}
+
+@keyframes animateRoute {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes animateCheckpointgroup {
+  100% {
+    filter: url(#AI_Shadow_2);
+    /* opacity: 100%; */
+  }
+}
+@keyframes animateCheckpointfirstBox {
+  100% {
+    filter: url(#AI_Shadow_2);
+    stroke: var(--gold-400);
+  }
+}
+@keyframes animateCheckpointgradientBox {
+  100% {
+    stroke: var(--gold-400);
+  }
+}
+@keyframes animateCheckpointstar {
+  100% {
+    filter: url(#AI_Shadow_2);
+    fill: var(--gold-400);
+    stroke: var(--gold-400);
+  }
+}
+
+.checkpointTextDefault {
+  filter: url(#AI_Shadow_None);
+  fill: #fff;
+}
+.checkpointTextAcheived {
+  filter: url(#AI_Shadow_2);
+  fill: var(--gold-400);
+}
+.checkpointTextAnimate {
+  fill: #fff;
+  filter: url(#AI_Shadow_None);
+  animation: animateCheckpointText 0.8s ease-out forwards 2.4s;
+}
+@keyframes animateCheckpointText {
+  100% {
+    filter: url(#AI_Shadow_2);
+    fill: var(--gold-400);
+  }
+}

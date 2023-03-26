@@ -1,8 +1,5 @@
-
-
-
 .mainContainer {
-  width: fit-content;
+  /* width: fit-content; */
   border: 2px solid var(--primary-400);
   outline: 2px solid var(--primary-400);
   outline-offset: 3px;
@@ -12,7 +9,7 @@
 /* Header for Box Title */
 .mainContainer .header {
   background: linear-gradient(var(--primary-700) 10%, #63031b);
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   isolation: isolate;
   font-size: 20px;
@@ -20,18 +17,27 @@
 }
 
 /* Center Glow Styling */
-.mainContainer .header::before {
+/* .mainContainer .header::before { */
+.mainContainer .header .headerGlow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+}
+.mainContainer .header .headerGlow::before {
   content: "";
   position: absolute;
+  height: 100%;
+  width: 3.5em;
   top: 1em;
   left: 50%;
   transform: translateX(-50%);
-  width: 3.5em;
-  height: 100%;
   background-color: #b60036;
   filter: blur(13px);
   border-radius: 40px;
-  z-index: -1;
 }
 
 .mainContainer .header h4 {
@@ -39,10 +45,19 @@
   font-weight: 400;
   text-align: center;
   padding: 0.3em 1em;
-  text-shadow: -4px 4px 0px #000000d6;
+  text-shadow: -2px 3px 0px #000000d6;
+}
+.mainContainer .header .dimaondLineContainer {
+  position: absolute;
+  width: 94px;
+  z-index: 10;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .mainContainer .body {
   background-color: var(--dark-color);
   padding: 3px 4.6px;
+  height: calc(100% - 40px);
 }

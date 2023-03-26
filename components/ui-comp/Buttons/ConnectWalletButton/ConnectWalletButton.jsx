@@ -5,38 +5,6 @@ const ConnectWalletButton = (props) => {
     <div className={`${styles.btnContainer}`}>
       <button onClick={clickHandler}>
         <span>{buttonLabel}</span>
-        {/* <svg
-          viewBox="0 0 196 43"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M22.3878 7L3 25L22.3878 43H173.612L193 25L173.612 7H22.3878Z"
-            fill="#00020B"
-          />
-          <mask id="path-2-inside-1_1_17" fill="white">
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M20 0L0 18L20 36H176L196 18L176 0H20Z"
-            />
-          </mask>
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M20 0L0 18L20 36H176L196 18L176 0H20Z"
-            fill="#010118"
-          />
-          <path
-            d="M0 18L-0.668965 17.2567L-1.49485 18L-0.668965 18.7433L0 18ZM20 0V-1H19.6163L19.331 -0.743294L20 0ZM20 36L19.331 36.7433L19.6163 37H20V36ZM176 36V37H176.384L176.669 36.7433L176 36ZM196 18L196.669 18.7433L197.495 18L196.669 17.2567L196 18ZM176 0L176.669 -0.743294L176.384 -1H176V0ZM0.668965 18.7433L20.669 0.743294L19.331 -0.743294L-0.668965 17.2567L0.668965 18.7433ZM20.669 35.2567L0.668965 17.2567L-0.668965 18.7433L19.331 36.7433L20.669 35.2567ZM176 35H20V37H176V35ZM195.331 17.2567L175.331 35.2567L176.669 36.7433L196.669 18.7433L195.331 17.2567ZM175.331 0.743294L195.331 18.7433L196.669 17.2567L176.669 -0.743294L175.331 0.743294ZM20 1H176V-1H20V1Z"
-            fill="#44627C"
-            mask="url(#path-2-inside-1_1_17)"
-          />
-        </svg> */}
-
         <svg
           viewBox="0 0 204 47"
           preserveAspectRatio="none"
