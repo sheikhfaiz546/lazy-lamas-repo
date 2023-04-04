@@ -13,12 +13,14 @@ const NFTPopup = ({ onClickPayBtn = undefined }) => {
             <ImageFrame size="150px" />
             <p> This Expedition will cost you</p>
             <h4>80k LAZY</h4>
-            <GoldButton
-              variant="secondary"
-              fontSize="12px"
-              clickHandler={onClickPayBtn}
-              buttonLabel="pay now"
-            />
+            <div>
+              <GoldButton
+                variant="secondary"
+                fontSize="12px"
+                clickHandler={onClickPayBtn}
+                buttonLabel="pay now"
+              />
+            </div>
           </div>
         </Box>
       </div>

@@ -1,11 +1,12 @@
 .btnContainer button {
   text-transform: uppercase;
   position: relative;
-  padding: 0.66em 2.22em;
+  padding-inline: 1.6em;
   font-weight: 700;
   min-width: 11.88em;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--dark-color);
   transition: 0.2s ease-out;
   margin-inline: auto;
@@ -14,20 +15,44 @@
   transform: scale(1.02);
 }
 
-.btnContainer button > span {
+.btnContainer button > p {
   width: 100%;
+  height: 100%;
   text-align: center;
+  line-height: 200%;
 }
-.btnContainer button > svg {
+.btnContainer button  svg {
+  z-index: -1;
   flex: 1;
+}
+
+.btnContainer .leftArrow {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 2.349em;
+  height: 100%;
 }
-.btnContainer button > svg path {
-  width: 100%;
+.btnContainer .svgBox {
+  position: absolute;
+  left: 1.05em;
+  top: 0px;
+  min-width: calc(100% - 2.1em);
+  width: calc(100% - 2.1em);
+  height: 2em;
+}
+
+.btnContainer .svgWithGDBox{
+  position: absolute;
+  left: 1.38em;
+  top: 0.1em;
+  min-width: calc(100% - 2.79em);
+  height: 1.8em;
+  width: calc(100% - 2.79em);
+}
+
+.btnContainer .rightArrow {
+  position: absolute;
+  right: 0;
+  top: 0;
   height: 100%;
 }

@@ -252,8 +252,6 @@
 }
 
 .contentWrapper .craouselContainer .imageContainer {
-  /* display: flex;
-  gap: 4rem; */
   position: relative;
   width: calc(550px + 25px);
   padding-inline: 25px;

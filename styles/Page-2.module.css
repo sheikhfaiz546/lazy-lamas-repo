@@ -71,10 +71,20 @@
   color: var(--grey-500);
   display: flex;
   align-items: center;
+  margin-top:1rem;
 }
 .contentWrapper .formWrapper .embedFile > div > span {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
   margin-left: 0.5rem;
+}
+
+
+.contentWrapper .formWrapper .submitBtn > *{
+  margin-left: auto;
+}
+.contentWrapper .formWrapper .submitBtn button{
+ /* width: 100%; */
+ /* width: 200px; */
 }

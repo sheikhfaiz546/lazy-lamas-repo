@@ -5,13 +5,13 @@ import { FileIcon } from "@/components/ui-comp/SVG-Icons";
 import Box from "@/components/ui-comp/Box";
 import InputTextFeild from "@/components/ui-comp/InputTextFeild";
 import { useRef, useState } from "react";
+import GoldButton from "@/components/ui-comp/Buttons/GoldButton/GoldButton";
 
 export default function Page2() {
   let inputFileRef = useRef(null);
   let [fileName, setFileName] = useState("");
 
   function imagePickFromDevice(event) {
-
     /* File Object Denconstruction */
     let { name } = event.target.files[0];
     if (name.length > 17) {
@@ -89,6 +89,15 @@ export default function Page2() {
                   </span>
                 )}
               </div>
+              {fileName && (
+                <div className={`${styles.submitBtn}`}>
+                  <GoldButton
+                    fontSize="14px"
+                    // clickHandler={() => inputFileRef.current.click()}
+                    buttonLabel="Submit"
+                  />
+                </div>
+              )}
             </div>
           </div>
         </div>
