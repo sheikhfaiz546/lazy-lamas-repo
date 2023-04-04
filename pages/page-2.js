@@ -92,6 +92,7 @@ export default function Page2() {
               {fileName && (
                 <div className={`${styles.submitBtn}`}>
                   <GoldButton
+                  variant="secondary"
                     fontSize="14px"
                     // clickHandler={() => inputFileRef.current.click()}
                     buttonLabel="Submit"
